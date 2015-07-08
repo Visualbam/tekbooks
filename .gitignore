@@ -1,0 +1,8 @@
+.git
+.build
+.bowerrc
+.editorconfig
+.jshintrc
+.jshintignore
+.npmignore
+node_modules
