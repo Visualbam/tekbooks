@@ -1,0 +1,22 @@
+{>"layouts/master" /}
+
+{<body}
+    <div class="row">
+        <div class="large-4 columns">
+            <img src="/img/node1.jpg" />
+        </div>
+
+        <div class="large-8 columns">
+            <h2>This is one of those cool detail pages I've been hearing about</h2>
+            <ul class="book-info">
+                <li>Category: Node.js</li>
+                <li>Author: John Doe</li>
+                <li>Publisher: DC Comics</li>
+            </ul>
+            <br>
+            <div class="price"><span>$19.99</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla tempor nulla iaculis lobortis vitae blandit urna. Nunc non mattis elit, viverra tincidunt augue. Donec nec eros eu libero tempor molestie eu id mi. Pellentesque sit amet velit ullamcorper, aliquet odio sed, gravida ante. Nulla ultrices sem justo, eget tristique sapien aliquam nec.</p>
+            <a class="button success">Add to cart</a>
+        </div>
+    </div>
+{/body}
