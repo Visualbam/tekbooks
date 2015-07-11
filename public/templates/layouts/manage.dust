@@ -28,9 +28,10 @@
             <section class="top-bar-section">
                 <!-- Right Nav Section -->
                 <ul class="right">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/pages/about">About</a></li>
-                    <li><a href="/cart">Cart</a></li>
+                    <li><a href="/manage">Dashboard</a></li>
+                    <li><a href="/manage/books">Books</a></li>
+                    <li><a href="/manage/categories">Categories</a></li>
+                    <li class="active"><a href="/" target="_blank">View website</a></li
                 </ul>
             </section>
         </nav>
@@ -62,3 +63,4 @@
 </body>
 
 </html>
+
