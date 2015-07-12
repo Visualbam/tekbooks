@@ -4,23 +4,25 @@
     <h2>Books</h2>
     <p><a href="/manage/books/add">Add book</a></p>
     <table>
-      <thead>
-        <tr>
-          <th width="200">ID</th>
-          <th width="200">Book Title</th>
-          <th width="200">Category</th>
-          <th width="180"></th>
-          <th width="180"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>37218931727819</td>
-          <td>Book Sample</td>
-          <td>Some category</td>
-          <td><a href="/manage/books/edit/1" class="tiny button">Edit</td>
-          <td><a href="#" class="alert tiny button remove-book">Delete</td>
-        </tr>
-      </tbody>
+        <thead>
+            <tr>
+                <th width="200">ID</th>
+                <th width="200">Book Title</th>
+                <th width="200">Category</th>
+                <th width="180"></th>
+                <th width="180"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {#books}
+            <tr>
+                <td>{._id}</td>
+                <td>{.title}</td>
+                <td>{.category}</td>
+                <td><a href="/manage/books/edit/{._id}" class="tiny button">Edit</td>
+                <td><a href="#" class="alert tiny button remove-book">Delete</td>
+            </tr>
+            {/books}
+        </tbody>
     </table>
 {/body}
