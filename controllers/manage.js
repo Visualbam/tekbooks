@@ -22,8 +22,35 @@ module.exports = function (router) {
     });
 
     router.get('/categories', function (req, res) {
-        res.render('manage/categories/index');
+        Category.find({}, function(err, categories) {
+            if (err) {
+                console.log(err);
+            }
+
+            var model = {
+                categories: categories
+            };
+
+            res.render('manage/categories/index', model);
+        });
+    });
+    
+    router.get('/books/add', function(req, res) {
+       Category.find({}, function(err, categories) {
+           if(err) {
+                console.log(err);
+           }
+
+           var model = {
+                categories: categories 
+           };
+
+           res.render('manage/books/add', model);
+       });
     });
 
+
+
+    
 };
 
